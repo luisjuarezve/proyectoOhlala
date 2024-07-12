@@ -1,0 +1,16 @@
+{% load static %}
+<div class="container">
+    <header>
+        <a href="{% url "inicio" %}">
+            <img src="{% static "img/logo_nuevo.png" %}" class="logo" alt="logotipo-ohlala">
+        </a>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="{% url "inicio" %}">Inicio</a></li>
+                <li class="nav-item"><a href="{% url "precios" %}">Precios</a></li>
+                <li class="nav-item"><a href="{% url "agendar" %}">Agendar Cita</a></li>
+                <li class="nav-item"><a href="{% url "nosotros" %}">Quienes Somos?</a></li>
+                <li class="nav-item"><a href="{% url "contacto" %}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>

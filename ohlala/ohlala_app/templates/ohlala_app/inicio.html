@@ -10,21 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <a href="#">
-                <img src="{% static "img/logo_nuevo.png" %}" class="logo" alt="logotipo-ohlala">
-            </a>
-            <nav>
-                <ul>
-                    <li class="nav-item"><a href="#">Inicio</a></li>
-                    <li class="nav-item"><a href="#">Precios</a></li>
-                    <li class="nav-item"><a href="#">Agendar Cita</a></li>
-                    <li class="nav-item"><a href="#">Quienes Somos?</a></li>
-                    <li class="nav-item"><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    {% include "ohlala_app/header.html" %}
         <hr>
         <section class="hero">
             <div class="hero-tittle">
@@ -92,6 +78,9 @@
                 </article>
             </div>
         </section>
+        <section class="carousel"> 
+            <h1>Carousel de productos</h1>
+        </section>
         <section class="call-to-prices">
             <div class="call-to-prices-article color-grey">
                 <article>
@@ -104,17 +93,6 @@
                 <img src="{% static "img/mano_pote.png" %}" alt="">
             </div>
         </section>
-        <footer>
-            <nav class="nav-footer">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Agendar cita</a></li>
-                    <li><a href="#">Quienes somos</a></li>
-                </ul>
-            </nav>
-            <hr>
-            <span>© Copyright 2024 - Oh la la!</span>
-        </footer>
-    </div>
+    {% include "ohlala_app/footer.html" %}
 </body>
 </html>
