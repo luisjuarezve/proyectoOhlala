@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'remixa-regular';
+    src: url("fonts/REMIXATEST-REGULAR-BF649A5C12202EB.OTF");
+}
+
+@font-face {
+    font-family: 'remixa-bold';
+    src: url("fonts/REMIXATEST-BOLD-BF649A5C11CF16C.OTF");
+}
+
+@font-face {
+    font-family: 'remixa-semi-bold';
+    src: url("fonts/REMIXATEST-SEMIBOLD-BF649A5C1233077.OTF");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: remixa-regular;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-left: 40px;
+}
+
+a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #F0ACBB;
+}
+
+hr {
+    color: #F0ACBB;
+}
+
+.color-grey {
+    background: #323B48;
+}
+
+.display-heading-h1 {
+    font-family: remixa-bold;
+    font-size: 64px;
+    color: #323B48;
+}
+
+.display-heading-h2 {
+    font-family: remixa-bold;
+    font-size: 40px;
+    color: #323B48;
+}
+
+.display-heading-bold {
+    font-family: remixa-bold;
+    font-size: 38px;
+    color: #FFFFFF;
+}
+
+.display-heading-semi-bold {
+    font-family: remixa-semi-bold;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.button-primary {
+    border-radius: 5px;
+    padding: 10px;
+    background: #323B48;
+    color: #F0ACBB;
+}
+
+.button-primary:hover {
+    border-radius: 5px;
+    padding: 8px;
+    color: #323B48;
+    background: #F0ACBB;
+    border: 2px solid #323B48;
+}
+
+.button-secondary {
+    border-radius: 5px;
+    padding: 10px;
+    color: #F0ACBB;
+    border: 2px solid #F0ACBB;
+}
+
+.button-secondary:hover {
+    border-radius: 5px;
+    padding: 8px;
+    color: #323B48;
+    background: #F0ACBB;
+    border: 2px solid #F0ACBB;
+}
+
+body {
+    background: #F0ACBB;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+header {
+    padding: 20px 50px 20px 50px;
+    background: #323B48;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero {
+    height: 654px;
+    background: #F0ACBB;
+    margin: auto;
+}
+
+
+.hero-tittle {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.hero-center {
+    text-align: center;
+}
+
+.hero-tittle h1 {
+    margin-bottom: 10px;
+}
+
+.hero-tittle p {
+    margin-bottom: 15px;
+}
+
+.hero-img {
+    display: block;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.hero-img img {
+    height: 100%;
+    max-height: 654px;
+    max-width: 654px;
+}
+
+.portfolio {
+    background: #F5E5E1;
+    justify-content: center;
+    padding: 50px;
+    width: 1100px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    background: #323B48;
+    border-radius: 20px;
+    width: 25%;
+    height: 300px;
+}
+
+.card a {
+    display: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card a:hover {
+    color: #F0ACBB;
+}
+
+.call-to-action {
+    width: 100%;
+    height: 450px;
+}
+
+.call-to-action-img {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+
+.call-to-action-img img {
+    height: 100%;
+}
+
+.call-to-action-article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+.call-to-action h1 {
+    color: #F0ACBB;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.call-to-prices {
+    width: 100%;
+    height: 450px;
+}
+
+.call-to-prices-img {
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: right;
+}
+
+.call-to-prices-img img {
+    height: 100%;
+}
+
+.call-to-prices-article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.call-to-prices h1 {
+    color: #F0ACBB;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.call-to-prices p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer {
+    width: 1100px;
+    padding: 20px 50px 20px 50px;
+    background: #323B48;
+}
