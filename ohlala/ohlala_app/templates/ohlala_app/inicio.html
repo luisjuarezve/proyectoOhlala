@@ -1,98 +1,86 @@
+{% extends "ohlala_app/index.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oh la la!</title>
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-</head>
-
-<body>
-    {% include "ohlala_app/header.html" %}
-        <hr>
-        <section class="hero">
-            <div class="hero-tittle">
-                <div class="hero-center">
-                    <h1 class="display-heading-h1">Hey girl you're gorgeous!</h1>
-                    <p class="display-heading-semi-bold">Come see us right now!</p>
-                    <a href="" class="button-primary">Agendar cita.</a>
-                </div>
-            </div>
-            <div class="hero-img">
-                <img src="{% static "img/manohero.png" %}" alt="">
-            </div>
-        </section>
-        <section class="portfolio">
-            <h1 class="display-heading-h1">Explore nuestros trabajos</h1>
-            <div class="grid">
-                <div class="card">
-                    <a href="">
-                        <img src="{% static "img/manohero.png" %}" width="150px" alt="">
-                        <h1>Temas unicos</h1>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <img src="{% static "img/manohero.png" %}" width="150px" alt="">
-                        <h1>Multiples Estilos</h1>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <img src="{% static "img/manohero.png" %}" width="150px" alt="">
-                        <h1>Efectos encantadores</h1>
-                    </a>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <a href="">
-                        <img src="{% static "img/manohero.png" %}" width="150px" alt="">
-                        <h1>Semi-permanente</h1>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <img src="{% static "img/manohero.png" %}" width="150px" alt="">
-                        <h1>Manicure</h1>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <img src="{% static "img/manohero.png" %}" width="150px" alt="">
-                        <h1>Polygel</h1>
-                    </a>
-                </div>
-        </section>
-        <section class="call-to-action">
-            <div class="call-to-action-img">
-                <img src="{% static "img/manito_gris_azulado.png" %}" alt="">
-            </div>
-            <div class="call-to-action-article color-grey">
-                <article>
-                    <h1 class="display-heading-h2">Te gusta lo que vez?</h1>
-                    <p class="display-heading-bold">Si es así te invitamos a que nos des una visita</p>
-                    <a href="" class="button-secondary">Agendar cita.</a>
-                </article>
-            </div>
-        </section>
-        <section class="carousel"> 
-            <h1>Carousel de productos</h1>
-        </section>
-        <section class="call-to-prices">
-            <div class="call-to-prices-article color-grey">
-                <article>
-                    <h1 class="display-heading-h2">Deseas seguir Explorando?</h1>
-                    <p class="display-heading-bold">Entonces tomale un vistazo a nuestros demas servicios</p>
-                    <a href="" class="button-secondary">Ver precios</a>
-                </article>
-            </div>
-            <div class="call-to-prices-img">
-                <img src="{% static "img/mano_pote.png" %}" alt="">
-            </div>
-        </section>
-    {% include "ohlala_app/footer.html" %}
-</body>
-</html>
+{% block title %} Oh la la! {% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="hero-tittle">
+        <div class="hero-center">
+            <h1 class="display-heading-h1">Hey girl you're gorgeous!</h1>
+            <p class="display-heading-semi-bold">Come see us right now!</p>
+            <a href="" class="button-primary">Agendar cita.</a>
+        </div>
+    </div>
+    <div class="hero-img">
+        <img src="{% static "img/manohero.png" %}" alt="">
+    </div>
+</section>
+<section class="portfolio">
+    <h1 class="display-heading-h1">Explore nuestros trabajos</h1>
+    <div class="grid">
+        <div class="card">
+            <a href="">
+                <img src="{% static "img/manohero.png" %}" width="150px" alt="">
+                <h1>Temas unicos</h1>
+            </a>
+        </div>
+        <div class="card">
+            <a href="">
+                <img src="{% static "img/manohero.png" %}" width="150px" alt="">
+                <h1>Multiples Estilos</h1>
+            </a>
+        </div>
+        <div class="card">
+            <a href="">
+                <img src="{% static "img/manohero.png" %}" width="150px" alt="">
+                <h1>Efectos encantadores</h1>
+            </a>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <a href="">
+                <img src="{% static "img/manohero.png" %}" width="150px" alt="">
+                <h1>Semi-permanente</h1>
+            </a>
+        </div>
+        <div class="card">
+            <a href="">
+                <img src="{% static "img/manohero.png" %}" width="150px" alt="">
+                <h1>Manicure</h1>
+            </a>
+        </div>
+        <div class="card">
+            <a href="">
+                <img src="{% static "img/manohero.png" %}" width="150px" alt="">
+                <h1>Polygel</h1>
+            </a>
+        </div>
+</section>
+<section class="call-to-action">
+    <div class="call-to-action-img">
+        <img src="{% static "img/manito_gris_azulado.png" %}" alt="">
+    </div>
+    <div class="call-to-action-article color-grey">
+        <article>
+            <h1 class="display-heading-h2">Te gusta lo que vez?</h1>
+            <p class="display-heading-bold">Si es así te invitamos a que nos des una visita</p>
+            <a href="" class="button-secondary">Agendar cita.</a>
+        </article>
+    </div>
+</section>
+<section class="carousel"> 
+    <h1>Carousel de productos</h1>
+</section>
+<section class="call-to-prices">
+    <div class="call-to-prices-article color-grey">
+        <article>
+            <h1 class="display-heading-h2">Deseas seguir Explorando?</h1>
+            <p class="display-heading-bold">Entonces tomale un vistazo a nuestros demas servicios</p>
+            <a href="" class="button-secondary">Ver precios</a>
+        </article>
+    </div>
+    <div class="call-to-prices-img">
+        <img src="{% static "img/mano_pote.png" %}" alt="">
+    </div>
+</section>
+{% endblock %}

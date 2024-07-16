@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="{% url "inicio" %}">
+                <img src="{% static "img/logo_nuevo.png" %}" class="logo" alt="logotipo-ohlala">
+            </a>
+            <nav>
+                <ul>
+                    <li class="nav-item"><a href="{% url "inicio" %}">Inicio</a></li>
+                    <li class="nav-item"><a href="{% url "precios" %}">Precios</a></li>
+                    <li class="nav-item"><a href="{% url "agendar" %}">Agendar Cita</a></li>
+                    <li class="nav-item"><a href="{% url "nosotros" %}">Quienes Somos?</a></li>
+                    <li class="nav-item"><a href="{% url "contacto" %}">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}{% endblock %}
+        <footer>
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="{% url "inicio" %}">Inicio</a></li>
+                    <li><a href="{% url "agendar" %}">Agendar cita</a></li>
+                    <li><a href="{% url "nosotros" %}">Quienes somos</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <span>© Copyright 2024 - Oh la la!</span>
+        </footer>
+        </div>
+</body>
+</html>

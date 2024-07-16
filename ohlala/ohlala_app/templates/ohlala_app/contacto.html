@@ -1,19 +1,8 @@
+{% extends "ohlala_app/index.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oh la la!</title>
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-</head>
-
-<body>
-    {% include "ohlala_app/header.html" %}
+{% block title %} Contacto {% endblock %}
+{% block content %}
     <div class="mantenimiento">
         <h1>Esta pagina no se encuenta disponible por los momentos, estamos trabajando en ello....</h1>
     </div>
-    {% include "ohlala_app/footer.html" %}
-</body>
-</html>
+{% endblock %}
