@@ -96,19 +96,24 @@ hr {
 }
 
 .button-primary {
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    border: solid 3px #323B48;
+    border-radius: 20px;
     padding: 10px;
-    background: #323B48;
-    color: #F0ACBB;
+    background: #F0ACBB;
+    color: #323B48;
+    font-size: 28px;
 }
 
 .button-primary:hover {
     transition: 0.2s;
-    border-radius: 5px;
-    padding: 8px;
-    color: #323B48;
-    background: #F0ACBB;
-    border: 2px solid #323B48;
+    color: #F0ACBB;
+    background-color: #323B48;
+    border: 3px solid #323B48;
 }
 
 .button-secondary {
@@ -166,6 +171,10 @@ header {
 }
 
 .hero-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -269,6 +278,19 @@ header {
     text-align: center;
 }
 
+.call-to-action-article article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-article article h1 {
+    font-size: 64px;
+}
+
+
+
 .call-to-action h1 {
     color: #F0ACBB;
     text-align: center;
@@ -280,6 +302,24 @@ header {
     margin-bottom: 50px;
 }
 
+.button-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    border: solid 3px #F0ACBB;
+    border-radius: 20px;
+    background-color: #323B48;
+    font-size: 28px;
+    color:#F0ACBB;
+}
+
+.button-date:hover {
+    background-color: #F0ACBB;
+    color: #323B48;
+}
+
 
 .carousel {
     display: flex;
@@ -288,6 +328,53 @@ header {
     width: 100%;
     height: 450px;
     background: #fff;
+}
+
+.carousel-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323B48;
+    height: 450px;
+    width: 50%;
+    gap: 20px;
+}
+.carousel-left h1 {
+    text-align: center;
+    font-size: 64px;
+    color:#F5E5E1
+}
+
+.carousel-left h3 {
+    width: 550px;
+    text-align: center;
+    font-size: 40px;
+    color: #F0ACBB;
+}
+
+.button-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    border: solid 3px #F5E5E1;
+    border-radius: 20px;
+    background-color: #323B48;
+    font-size: 28px;
+    color:#F5E5E1;
+}
+
+.button-carousel:hover {
+    border-color: #F5E5E1;
+    background-color: #F5E5E1;
+    color:#323B48;
+}
+
+.carousel-right {
+    
+    width: 50%;
 }
 
 .call-to-prices {

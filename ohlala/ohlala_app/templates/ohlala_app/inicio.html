@@ -58,16 +58,24 @@
     </div>
     <div class="call-to-action-article color-grey">
         <article>
-            <h1 class="display-heading-h2">Te gusta lo que vez?</h1>
+            <h1 class="display-heading-h2">¿Te gusta lo que ves?</h1>
             <p class="display-heading-bold">Si es así te invitamos a que nos des una visita</p>
-            <a href="" class="button-secondary">Agendar cita.</a>
+            <a href="{% url "agendar" %}" class="button-date">Agendar cita.</a>
         </article>
     </div>
 </section>
 <section class="carousel"> 
-    <h1>Carousel de productos</h1>
+    <div class="carousel-left">
+        <h1>¿Deseas seguir explorando?</h1>
+        <h3>Averigua sobre nuestros servicios y productos</h3>
+        <a class="button-carousel">Ver servicios</a>
+    </div>
+    <div class="carousel-right">
+        <h1>Carousel de productos</h1>
+    </div>
 </section>
-<section class="call-to-prices">
+<!---
+    <section class="call-to-prices">
     <div class="call-to-prices-article color-grey">
         <article>
             <h1 class="display-heading-h2">Deseas seguir Explorando?</h1>
@@ -79,4 +87,5 @@
         <img src="{% static "img/mano_pote.png" %}" alt="">
     </div>
 </section>
+--->
 {% endblock %}
