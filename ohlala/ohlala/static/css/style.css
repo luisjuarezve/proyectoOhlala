@@ -59,6 +59,7 @@ a {
 }
 
 a:hover {
+    transition: 0.2s;
     color: #F0ACBB;
 }
 
@@ -102,6 +103,7 @@ hr {
 }
 
 .button-primary:hover {
+    transition: 0.2s;
     border-radius: 5px;
     padding: 8px;
     color: #323B48;
@@ -117,6 +119,7 @@ hr {
 }
 
 .button-secondary:hover {
+    transition: 0.2s;
     border-radius: 5px;
     padding: 8px;
     color: #323B48;
@@ -194,7 +197,7 @@ header {
     width: 1100px;
 }
 
-.portfolio h1 {
+.portfolio .display-heading-h1 {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -206,8 +209,8 @@ header {
 
 .card {
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     margin: auto;
     padding: 20px 10px 20px 10px;
@@ -224,7 +227,12 @@ header {
     text-align: center;
 }
 
-.card a:hover {
+.card-title {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.card:hover {
     color: #F0ACBB;
 }
 
@@ -232,7 +240,7 @@ header {
     background-color: #F0ACBB;
 }
 
-.card.pink a:hover {
+.card.pink:hover {
     color:#323B48
 }
 
@@ -496,7 +504,7 @@ footer span {
 
 .contact-card {
     height: 580px;
-    width: 580px;
+    width: 550px;
     border-radius: 50px;
     background-color: #323B48;
     display: flex;
@@ -571,7 +579,7 @@ footer span {
 
 .social-card {
     height: 580px;
-    width: 580px;
+    width: 550px;
     border-radius: 50px;
     background-color: #F5E5E1;
     display: flex;
