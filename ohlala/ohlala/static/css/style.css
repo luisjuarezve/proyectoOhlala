@@ -343,3 +343,130 @@ footer span {
     width: 800px;
     color: #323B48;
 }
+
+/*
+ -- Luisito (Luis Garrillo XD)
+*/
+
+.about-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323B48;
+}
+
+.about-container {
+    height: 720px;
+    width:1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container.pink {
+    background-color: #F0ACBB;
+}
+.about-container.black {
+    background-color: #323B48;
+}
+
+.about-container-row {
+    height: 400px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-container-row.black {
+    background-color: #323B48;
+}
+
+.about-img {
+    flex: 1 1 none;
+    height: 350px;
+}
+.about-title {
+    font-size: 72px;
+}
+.about-para {
+    width: 860px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.vision-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: #F0ACBB;
+    border-radius: 50%;
+}
+
+.vision-para {
+    width: 815px;
+    font-size: 50px;
+    font-style: italic;
+    color: #F5E5E1;
+}
+
+.about-line {
+    width: 750px;
+}
+
+.values-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 205px;
+}
+
+.values-title {
+    font-size: 72px;
+    color: #F5E5E1;
+}
+
+.values-body {
+    display: flex;
+    
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 515px;
+    width: 400px;
+}
+
+.value.delicate {
+    background-color: #F5E5E1;
+}
+
+.value.feminine {
+    background-color: #F0ACBB;
+}
+
+.value-title {
+    font-size: 64px;
+}
+
+.value-title.light {
+    color:#F5E5E1
+}
+
+.value-para {
+    width: 320px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.value-para.light {
+    color:#F5E5E1
+}
