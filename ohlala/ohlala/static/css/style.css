@@ -59,31 +59,8 @@ a {
 }
 
 a:hover {
+    transition: 0.2s;
     color: #F0ACBB;
-}
-
-input {
-    padding: 10px 10px 5px 10px;
-    background: none;
-    font-size: 20px;
-    border: none;
-    border-bottom: 5px solid #F0ACBB;
-    color: #A6BCDA;
-}
-
-input::placeholder {
-    background: none;
-    font-size: 20px;
-    border: none;
-    color: #A6BCDA;
-}
-
-input:focus {
-    background: none;
-    font-size: 20px;
-    border: none;
-    border-bottom: 5px solid #FFFFFF;
-    color: #FFFFFF;
 }
 
 hr {
@@ -112,43 +89,31 @@ hr {
     color: #FFFFFF;
 }
 
-.display-heading-semi-bold-h1 {
-    font-family: remixa-semi-bold;
-    font-size: 64px;
-    color: #FFFFFF;
-}
-
-.display-heading-semi-bold-h2 {
+.display-heading-semi-bold {
     font-family: remixa-semi-bold;
     font-size: 40px;
     color: #FFFFFF;
 }
 
-.display-heading-semi-bold-h3 {
-    font-family: remixa-semi-bold;
-    font-size: 32px;
-    color: #FFFFFF;
-}
-
-.display-heading-semi-bold-h4 {
-    font-family: remixa-semi-bold;
-    font-size: 25px;
-    color: #FFFFFF;
-}
-
 .button-primary {
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    border: solid 3px #323B48;
+    border-radius: 20px;
     padding: 10px;
-    background: #323B48;
-    color: #F0ACBB;
+    background: #F0ACBB;
+    color: #323B48;
+    font-size: 28px;
 }
 
 .button-primary:hover {
-    border-radius: 5px;
-    padding: 8px;
-    color: #323B48;
-    background: #F0ACBB;
-    border: 2px solid #323B48;
+    transition: 0.2s;
+    color: #F0ACBB;
+    background-color: #323B48;
+    border: 3px solid #323B48;
 }
 
 .button-secondary {
@@ -159,6 +124,7 @@ hr {
 }
 
 .button-secondary:hover {
+    transition: 0.2s;
     border-radius: 5px;
     padding: 8px;
     color: #323B48;
@@ -205,6 +171,10 @@ header {
 }
 
 .hero-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -236,7 +206,7 @@ header {
     width: 1100px;
 }
 
-.portfolio h1 {
+.portfolio .display-heading-h1 {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -248,8 +218,8 @@ header {
 
 .card {
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     margin: auto;
     padding: 20px 10px 20px 10px;
@@ -266,7 +236,12 @@ header {
     text-align: center;
 }
 
-.card a:hover {
+.card-title {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.card:hover {
     color: #F0ACBB;
 }
 
@@ -274,8 +249,8 @@ header {
     background-color: #F0ACBB;
 }
 
-.card.pink a:hover {
-    color: #323B48
+.card.pink:hover {
+    color:#323B48
 }
 
 .call-to-action {
@@ -303,6 +278,19 @@ header {
     text-align: center;
 }
 
+.call-to-action-article article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-article article h1 {
+    font-size: 64px;
+}
+
+
+
 .call-to-action h1 {
     color: #F0ACBB;
     text-align: center;
@@ -314,6 +302,24 @@ header {
     margin-bottom: 50px;
 }
 
+.button-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    border: solid 3px #F0ACBB;
+    border-radius: 20px;
+    background-color: #323B48;
+    font-size: 28px;
+    color:#F0ACBB;
+}
+
+.button-date:hover {
+    background-color: #F0ACBB;
+    color: #323B48;
+}
+
 
 .carousel {
     display: flex;
@@ -322,6 +328,53 @@ header {
     width: 100%;
     height: 450px;
     background: #fff;
+}
+
+.carousel-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323B48;
+    height: 450px;
+    width: 50%;
+    gap: 20px;
+}
+.carousel-left h1 {
+    text-align: center;
+    font-size: 64px;
+    color:#F5E5E1
+}
+
+.carousel-left h3 {
+    width: 550px;
+    text-align: center;
+    font-size: 40px;
+    color: #F0ACBB;
+}
+
+.button-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    border: solid 3px #F5E5E1;
+    border-radius: 20px;
+    background-color: #323B48;
+    font-size: 28px;
+    color:#F5E5E1;
+}
+
+.button-carousel:hover {
+    border-color: #F5E5E1;
+    background-color: #F5E5E1;
+    color:#323B48;
+}
+
+.carousel-right {
+    
+    width: 50%;
 }
 
 .call-to-prices {
@@ -377,7 +430,7 @@ footer hr {
 
 footer span {
     padding-left: 40px;
-    color: #F5E5E1
+    color:#F5E5E1
 }
 
 .mantenimiento {
@@ -393,54 +446,6 @@ footer span {
 .mantenimiento h1 {
     width: 800px;
     color: #323B48;
-}
-
-/*
- -- Signup (Luis Juarez XD)
-*/
-.signup {
-    height: 777px;
-    width: 100%;
-}
-
-.form-container {
-    height: 677px;
-    margin-top: 50px;
-    width: 60%;
-    float: left;
-    background: #323B48;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.form-container h1 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.signupform .inputs input {
-    margin-right: 20px;
-    width: 40%;
-}
-
-.signupform .inputs div input {
-    width: 40%;
-}
-
-.signup-img {
-    width: 30%;
-    float: right;
-}
-
-.signup-img img {
-    width: 100%;
 }
 
 /*
@@ -460,7 +465,7 @@ footer span {
 
 .about-container {
     height: 720px;
-    width: 1200px;
+    width:1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -470,7 +475,6 @@ footer span {
 .about-container.pink {
     background-color: #F0ACBB;
 }
-
 .about-container.black {
     background-color: #323B48;
 }
@@ -492,11 +496,9 @@ footer span {
     flex: 1 1 none;
     height: 350px;
 }
-
 .about-title {
     font-size: 72px;
 }
-
 .about-para {
     width: 860px;
     font-size: 32px;
@@ -538,7 +540,7 @@ footer span {
 
 .values-body {
     display: flex;
-
+    
 }
 
 .value {
@@ -563,7 +565,7 @@ footer span {
 }
 
 .value-title.light {
-    color: #F5E5E1
+    color:#F5E5E1
 }
 
 .value-para {
@@ -573,7 +575,7 @@ footer span {
 }
 
 .value-para.light {
-    color: #F5E5E1
+    color:#F5E5E1
 }
 
 /*
@@ -582,14 +584,14 @@ footer span {
 
 .contact-wrap {
     height: 720px;
-    display: flex;
+    display:flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .contact-card {
     height: 580px;
-    width: 580px;
+    width: 550px;
     border-radius: 50px;
     background-color: #323B48;
     display: flex;
@@ -610,21 +612,21 @@ footer span {
 .contact-field {
     box-sizing: border-box;
     font-size: 28px;
-    width: 415px;
+    width:415px;
     height: 55px;
     padding-left: 20px;
     border: none;
     border-bottom: solid 3px #F0ACBB;
     background-color: #323B48;
-
+    
     flex: none;
-    color: #F5E5E1;
+    color:#F5E5E1;
 }
 
 .contact-field:focus {
     transition: 0.2s;
     border-bottom: solid 3px #F5E5E1;
-    outline: none;
+    outline:none;
 }
 
 .contact-textarea {
@@ -635,13 +637,13 @@ footer span {
     border: solid 3px #F0ACBB;
     width: 415px;
     height: 125px;
-    color: #F5E5E1;
+    color:#F5E5E1;
 }
 
 .contact-textarea:focus {
     transition: 0.2s;
     border: solid 3px #F5E5E1;
-    outline: none;
+    outline:none;
 }
 
 .contact-button {
@@ -659,12 +661,12 @@ footer span {
     transition: 0.2s;
     background-color: #F0ACBB;
     cursor: pointer;
-    color: #323B48
+    color:#323B48
 }
 
 .social-card {
     height: 580px;
-    width: 580px;
+    width: 550px;
     border-radius: 50px;
     background-color: #F5E5E1;
     display: flex;
