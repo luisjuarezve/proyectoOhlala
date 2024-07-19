@@ -1,0 +1,30 @@
+{% extends "ohlala_app/index.html" %}
+{% load static %}
+{% block title %} Registro {% endblock %}
+{% block content %}
+    <section class="signup">
+        <div class="signup-form">
+            <form class="signupform" action="" method="post">
+                <h1 class="display-heading-h3">Bienvenida a nuestra familia</h1>
+                <h2 class="display-heading-semi-bold-h4">Llene el formulario para poder llevar a cabo el registro</h2>
+                <input type="number" name="" id="" placeholder="Cédula">
+                <div>
+                    <input type="text" name="" id="" placeholder="Nombre">
+                    <input type="text" name="" id="" placeholder="Apellido">
+                </div>
+                <div>
+                    <input type="date" name="" id="" placeholder="Fecha de nac.">
+                    <input type="text" name="" id="" placeholder="Celular">
+                </div>
+                <input type="email" name="" id="" placeholder="Correo Electronico">
+                <input type="password" name="" id="" placeholder="Clave">
+                <input type="password" name="" id="" placeholder="Confirmar Clave">
+            </form>
+        </div>
+        <div class="signup-img">
+            <img src="{% static "img/manohero.png" %}" alt="">
+            <h2>Ya te encuentras registrado</h2>
+            <button>inicia sesión</button>
+        </div>
+    </section>
+{% endblock %}
