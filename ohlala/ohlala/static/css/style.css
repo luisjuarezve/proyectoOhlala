@@ -228,6 +228,14 @@ header {
     color: #F0ACBB;
 }
 
+.card.pink {
+    background-color: #F0ACBB;
+}
+
+.card.pink a:hover {
+    color:#323B48
+}
+
 .call-to-action {
     width: 100%;
     height: 450px;
@@ -327,6 +335,7 @@ footer hr {
 
 footer span {
     padding-left: 40px;
+    color:#F5E5E1
 }
 
 .mantenimiento {
