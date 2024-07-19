@@ -3,11 +3,9 @@ from django.db import transaction
 from django.shortcuts import render, redirect
 from account_manager.models import Cuenta, Cliente
 from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 
-@csrf_exempt
 def form_signup(request):
     if request.method == 'POST':
         cedula = request.POST.get('cedula')
@@ -34,7 +32,6 @@ def form_signup(request):
                 return HttpResponse('Ocurrió un error durante el registro. Por favor, intenta nuevamente.')
 
 
-@csrf_exempt
 def form_login(request):
     if request.method == 'POST':
         correo_electronico = request.POST.get('correo_electronico')
