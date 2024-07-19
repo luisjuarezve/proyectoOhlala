@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 @csrf_exempt
-def signup(request):
+def form_signup(request):
     if request.method == 'POST':
         cedula = request.POST.get('cedula')
         nombre = request.POST.get('nombre')
@@ -35,7 +35,7 @@ def signup(request):
 
 
 @csrf_exempt
-def login(request):
+def form_login(request):
     if request.method == 'POST':
         correo_electronico = request.POST.get('correo_electronico')
         contrasena = request.POST.get('contrasena')
@@ -50,3 +50,11 @@ def login(request):
         except Cuenta.DoesNotExist:
             return HttpResponse('El correo electrónico no está registrado')
     return render(request, 'ohlala_app/login.html')
+
+
+def signup(request):
+    return render(request, 'account_manager/signup.html')
+
+
+def login(request):
+    return render(request, 'account_manager/login.html')
