@@ -26,7 +26,7 @@ def form_signup(request):
                     cuenta = Cuenta(idCliente=cliente, correo_electronico=correo_electronico,
                                     contrasena=make_password(contrasena))
                     cuenta.save()
-                    return HttpResponse('Registro Exitoso')
+                    return redirect('inicio')
             except Exception as e:
                 print(f"Error: {e}")
                 return HttpResponse('Ocurrió un error durante el registro. Por favor, intenta nuevamente.')

@@ -2,35 +2,21 @@
 {% load static %}
 {% block title %} Registro {% endblock %}
 {% block content %}
-<div class="signup-wrap">
-    <form method="post" class="signup-card">
+<div class="login-wrap">
+    <form method="post" class="login-card" action="{% url "form_login" %}">
         {% csrf_token %}
-        <h1 class="signup-title light">Bienvenida a nuestra familia</h1>
-        <h2 class="signup-subtitle pink">Llene el formulario para poder registrar sus datos en el sistema</h2>
-        <div class="inputs">
-            <input class="signup-field" type="number" name="cedula" id="" placeholder="Cédula">
-            <div class="signup-field-double">
-                <input class="signup-field" type="text" name="nombre" id="" placeholder="Nombre">
-                <input class="signup-field" type="text" name="apellido" id="" placeholder="Apellido">
-            </div>
-            <div class="signup-field-double">
-                <input class="signup-field" type="date" name="fecha_nacimiento" id="" placeholder="Fecha de nac.">
-                <input class="signup-field" type="text" name="telefono" id="" placeholder="Celular">
-            </div>
-            <input class="signup-field" type="email" name="correo_electronico" id="" placeholder="Correo Electronico">
-            <div class="signup-field-double">
-                <input class="signup-field" type="password" name="contrasena" id="" placeholder="Clave">
-                <input class="signup-field" type="password" name="" id="" placeholder="Confirmar Clave">
-            </div>
-        </div>
-        <button type="submit" class="signup-button">Registrarse</button>  
+    <h1 class="login-title light">Que gusto tenerte de vuelta</h1>
+        <h2 class="login-subtitle grey">Ingresa tus datos para que compartamos más tiempo juntos</h2>
+            <input class="login-field" type="email" name="correo_electronico" id="" placeholder="Example@mail.com">
+            <input class="login-field" type="password" name="contrasena" id="" placeholder="Contraseña">
+        <button type="submit" class="login-button">Iniciar Sesión</button>  
     </form>
-    <div class="signup-card-login">
+    <div class="login-card-login">
         <div class="icons">
-            <img src="{% static "img/nail_polish.png" %}">
+            <img class="icons-img-login" src="{% static "img/mano_logo_blanco.png" %}">
         </div>
-        <p class="signup-para">Ya te encuentras registrado?</p>
-        <a class="login-button" href="{% url "login" %}">Iniciar sesión</a> 
+        <p class="login-para .display-heading-semi-bold-h1 pink">No te has unido a nuestra familia aún?</p>
+        <a class="login-button" href="{% url "signup" %}">Crea una cuenta</a> 
     </div>
 </div>
 {% endblock %}
