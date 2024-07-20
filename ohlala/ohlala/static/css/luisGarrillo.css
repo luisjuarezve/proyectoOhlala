@@ -1,0 +1,245 @@
+/* -- Luisito (Luis Garrillo XD) -- */
+
+/* 
+    Quienes somos
+*/
+.button-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    border: solid 3px #F0ACBB;
+    border-radius: 20px;
+    background-color: #323B48;
+    font-size: 28px;
+    color: #F0ACBB;
+}
+
+.button-date:hover {
+    background-color: #F0ACBB;
+    color: #323B48;
+}
+
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    background: #fff;
+}
+
+.carousel-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323B48;
+    height: 450px;
+    width: 50%;
+    gap: 20px;
+}
+
+.carousel-left h1 {
+    text-align: center;
+    font-size: 64px;
+    color: #F5E5E1
+}
+
+.carousel-left h3 {
+    width: 550px;
+    text-align: center;
+    font-size: 40px;
+    color: #F0ACBB;
+}
+
+.button-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    border: solid 3px #F5E5E1;
+    border-radius: 20px;
+    background-color: #323B48;
+    font-size: 28px;
+    color: #F5E5E1;
+}
+
+.button-carousel:hover {
+    border-color: #F5E5E1;
+    background-color: #F5E5E1;
+    color: #323B48;
+}
+
+.carousel-right {
+
+    width: 50%;
+}
+
+.call-to-prices {
+    width: 100%;
+    height: 450px;
+}
+
+.call-to-prices-img {
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: right;
+}
+
+.call-to-prices-img img {
+    height: 100%;
+}
+
+.call-to-prices-article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.call-to-prices h1 {
+    color: #F0ACBB;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.call-to-prices p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*
+    Quienes somos
+*/
+.about-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323B48;
+}
+
+.about-container {
+    height: 720px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container.pink {
+    background-color: #F0ACBB;
+}
+
+.about-container.black {
+    background-color: #323B48;
+}
+
+.about-container-row {
+    height: 400px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-container-row.black {
+    background-color: #323B48;
+}
+
+.about-img {
+    flex: 1 1 none;
+    height: 350px;
+}
+
+.about-title {
+    font-size: 72px;
+}
+
+.about-para {
+    width: 860px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.vision-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: #F0ACBB;
+    border-radius: 50%;
+}
+
+.vision-para {
+    width: 815px;
+    font-size: 50px;
+    font-style: italic;
+    color: #F5E5E1;
+}
+
+.about-line {
+    width: 750px;
+}
+
+.values-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 205px;
+}
+
+.values-title {
+    font-size: 72px;
+    color: #F5E5E1;
+}
+
+.values-body {
+    display: flex;
+
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 515px;
+    width: 400px;
+}
+
+.value.delicate {
+    background-color: #F5E5E1;
+}
+
+.value.feminine {
+    background-color: #F0ACBB;
+}
+
+.value-title {
+    font-size: 64px;
+}
+
+.value-title.light {
+    color: #F5E5E1
+}
+
+.value-para {
+    width: 320px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.value-para.light {
+    color: #F5E5E1
+}
