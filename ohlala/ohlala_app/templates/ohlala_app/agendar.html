@@ -2,7 +2,76 @@
 {% load static %}
 {% block title %} Agendar {% endblock %}
 {% block content %}
-    <div class="mantenimiento">
-        <h1>Esta pagina no se encuenta disponible por los momentos, estamos trabajando en ello....</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="agendar-wrap">
+        <div class="agendar-card">
+            <h1 class="agendar-title light">Agenda tu cita</h1>
+            <h2 class="agendar-subtitle light">Fecha y hora</h2>
+            <div class="agendar-turno">
+                <input class="agendar-field" type="date" name="date">
+                <select name="hora" id="hora">
+                    <option value="8">8:00 AM</option>
+                    <option value="9">9:00 AM</option>
+                    <option value="10">10:00 AM</option>
+                    <option value="11">11:00 AM</option>
+                    <option value="12">12:00 PM</option>
+                    <option value="13">1:00 PM</option>
+                    <option value="14">2:00 PM</option>
+                    <option value="15">3:00 PM</option>
+                    <option value="16">4:00 PM</option>
+                    <option value="17">5:00 PM</option>
+                    <option value="18">6:00 PM</option>
+                    <option value="19">7:00 PM</option>
+                    <option value="20">8:00 PM</option>
+                </select>
+            </div>
+            <div class="all-services">
+                <div class="service">
+                    <img src="{% static "img/nail3.png" %}" alt="">
+                    <h2 class="light">Manicura</h2>
+                    <select name="manicura">
+                        <option value="0"> - </option>
+                        {% for servicio in servicios %}
+                            {% if servicio.idServicio <= 6  %}
+                                <option value="{{ servicio.idServicio }}">{{ servicio.nombre }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="service">
+                    <img src="{% static "img/nail3.png" %}" alt="">
+                    <h2 class="light">Pedicura</h2>
+                    <select name="pedicura">
+                        <option value="0">-</option>
+                        {% for servicio in servicios %}
+                            {% if servicio.idServicio > 6  %}
+                                <option value="{{ servicio.idServicio }}">{{ servicio.nombre }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+               
+            </div>            
+        </div>
+        <div class="social-card">
+            <h1 class="contact-title">Confirmacion de la cita</h1>
+            <hr>
+            <h2>Fecha de la cita: <span>00/00/0000 00:00 AM</span></h2>
+            <div class="icons">
+                <h1>Servicios: </h1>
+                <ul>
+                    <li>1 servicio xd</li>
+                    <li>1 servicio xd</li>
+                    <li>1 servicio xd</li>
+                    <li>1 servicio xd</li>
+                </ul>
+            </div>
+            <hr>
+            <p class="contact-para center">Total a pagar:</p>
+            <hr>
+            <button class="contact-button">Agendar cita</button>  
+        </div>
     </div>
+</form>
 {% endblock %}

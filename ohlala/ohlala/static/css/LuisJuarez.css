@@ -178,10 +178,19 @@ input {
     background: none;
     color: #A6BCDA;
     border-bottom: 3px solid #F0ACBB;
+    font-size: 22px;
 }
 
 input::placeholder {
     color: #A6BCDA;
+}
+
+select {
+    border: none;
+    background: none;
+    color: #A6BCDA;
+    border-bottom: 3px solid #F0ACBB;
+    font-size: 22px;
 }
 
 /*----- plantilla base -----*/
@@ -490,12 +499,6 @@ footer span {
     outline: none;
 }
 
-.contact-textarea:focus {
-    transition: 0.2s;
-    border: solid 3px #F5E5E1;
-    outline: none;
-}
-
 .signup-button {
     box-sizing: border-box;
     background-color: #323B48;
@@ -690,4 +693,116 @@ footer span {
 
 .pink {
     color: #F0ACBB;
+}
+
+/*
+    Agendar cita
+*/
+
+.agendar-wrap {
+    height: 720px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.agendar-card {
+    height: 580px;
+    width: 550px;
+    border-radius: 50px;
+    background-color: #323B48;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.agendar-title {
+    font-size: 32px;
+}
+
+.agendar-subtitle {
+    font-size: 20px;
+    font-family: 'remixa-semi-bold';
+}
+
+.agendar-card .light {
+    color: #F5E5E1;
+}
+
+.agendar-turno {
+    display: flex;
+    gap: 10px;
+}
+
+.agendar-turno input {
+    width: 200px;
+}
+
+.agendar-turno select {
+    width: 200px;
+}
+
+.agendar-button {
+    box-sizing: border-box;
+    background-color: #323B48;
+    width: 235px;
+    height: 70px;
+    border: solid 3px #F0ACBB;
+    border-radius: 20px;
+    color: #F0ACBB;
+    font-size: 26px;
+}
+
+.contact-button:hover {
+    transition: 0.2s;
+    background-color: #F0ACBB;
+    cursor: pointer;
+    color: #323B48
+}
+
+.social-card {
+    height: 580px;
+    width: 550px;
+    border-radius: 50px;
+    background-color: #F5E5E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-para {
+    width: 413px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.contact-para.center {
+    text-align: center;
+}
+
+.agendar-card .all-services {
+    display: flex;
+    gap: 10px;
+}
+
+.agendar-card .all-services .service {
+    text-align: center;
+}
+
+.service select {
+    width: 200px;
+}
+
+.agendar-card .all-services img {
+    height: 100px;
 }

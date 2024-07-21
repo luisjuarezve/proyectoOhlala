@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
+from .models import Servicio
 # Create your views here.
 
 
@@ -12,7 +13,8 @@ def precios(request):
 
 
 def agendar(request):
-    return render(request, 'ohlala_app/agendar.html', {})
+    servicios = Servicio.objects.all()
+    return render(request, 'ohlala_app/agendar.html', {'servicios': servicios})
 
 
 def nosotros(request):
