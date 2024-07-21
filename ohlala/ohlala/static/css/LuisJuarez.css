@@ -193,6 +193,11 @@ select {
     font-size: 22px;
 }
 
+option {
+    color: #323B48;
+    background: #F0ACBB;
+}
+
 /*----- plantilla base -----*/
 
 body {
@@ -745,20 +750,20 @@ footer span {
 
 .agendar-button {
     box-sizing: border-box;
-    background-color: #323B48;
+    background-color: #F0ACBB;
     width: 235px;
     height: 70px;
     border: solid 3px #F0ACBB;
     border-radius: 20px;
-    color: #F0ACBB;
+    color: #323B48;
     font-size: 26px;
 }
 
-.contact-button:hover {
+.agendar-button:hover {
     transition: 0.2s;
-    background-color: #F0ACBB;
+    background-color: #323B48;
     cursor: pointer;
-    color: #323B48
+    color: #F0ACBB;
 }
 
 .agendar-card .all-services {
