@@ -113,3 +113,145 @@
 .contact-para.center {
     text-align: center;
 }
+
+hr {
+    margin: 0px;
+    border: solid 1px #F0ACBB;
+    width: 620px;
+  }
+  
+  .contendor-padre {
+    background-color: #323B48;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+  }
+  
+  .caja-negra {
+    width: 1200px;
+    height: 440px;
+    background-color: #323B48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+  }
+  
+  .caja-rosada {
+    width: 1280px;
+    height: 550px;
+    padding: 0px;
+    background-color: #F0ACBB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen {
+    width: 353px;
+    height: 353px;
+  }
+  
+  .texto {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .texto h1 {
+    color: #F1F5E6;
+    padding-bottom: 20px;
+  }
+  
+  .texto p {
+    color: #F1F5E6;
+    width: 540px;
+    text-align: justify;
+    
+  }
+
+  .caja-blanca {
+    width: 1100px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1F5E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 50px;
+  }
+  .caja-blanca h1{
+    color: #323B48;
+  }
+
+  .caja-blanca p{
+    width: 900px;
+    font-size: 20px;
+    margin: 0px;
+    text-align: justify;
+    color: #323B48;
+  }
+
+  .title{
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #323B48;
+  }
+
+  .texto1{
+    width: 900px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #323B48;
+  }
+
+  .button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: solid 3px #323B48;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    background: #F0ACBB;
+    color: #323B48;
+    font-size: 28px;
+}
+
+.button-primary:hover {
+    transition: 0.2s;
+    color: #F0ACBB;
+    background-color: #323B48;
+    border: 3px solid #323B48;
+}
+
+.button-secondary {
+    border-radius: 5px;
+    padding: 10px;
+    color: #F0ACBB;
+    border: 2px solid #F0ACBB;
+}
+
+.button-secondary:hover {
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 8px;
+    color: #323B48;
+    background: #F0ACBB;
+    border: 2px solid #F0ACBB;
+}
