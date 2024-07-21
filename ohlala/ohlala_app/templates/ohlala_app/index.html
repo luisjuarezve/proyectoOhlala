@@ -17,12 +17,19 @@
             <a href="{% url "inicio" %}">
                 <img src="{% static "img/logo_nuevo.png" %}" class="logo" alt="logotipo-ohlala">
             </a>
+            <div class="dropdown">
+                <button class="dropbtn">Cuenta</button>
+                <div class="dropdown-content">
+                    <a href="#">Registro</a>
+                    <a href="#">Inicio de sesión</a>
+                </div>
+            </div>
             <nav>
                 <ul>
                     <li class="nav-item"><a href="{% url "inicio" %}">Inicio</a></li>
                     <li class="nav-item"><a href="{% url "precios" %}">Servicios</a></li>
                     <li class="nav-item"><a href="{% url "agendar" %}">Agendar Cita</a></li>
-                    <li class="nav-item"><a href="{% url "nosotros" %}">Quienes Somos?</a></li>
+                    <li class="nav-item"><a href="{% url "nosotros" %}">¿Quienes Somos?</a></li>
                     <li class="nav-item"><a href="{% url "contacto" %}">Contacto</a></li>
                 </ul>
             </nav>
