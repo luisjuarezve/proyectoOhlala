@@ -123,7 +123,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #323B48;
+    background-color: #F0ACBB;
+    gap: 20px;
 }
 
 .about-container {
@@ -133,6 +134,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px
 }
 
 .about-container.pink {
@@ -141,6 +143,17 @@
 
 .about-container.black {
     background-color: #323B48;
+}
+
+.about-container-vision {
+    height: 720px;
+    width: 720px;
+    display: flex;
+    background-color: #323B48;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .about-container-row {
@@ -163,12 +176,14 @@
 
 .about-title {
     font-size: 72px;
+    color: #323B48;
 }
 
 .about-para {
     width: 860px;
     font-size: 32px;
     text-align: center;
+    color: #323B48;
 }
 
 .vision-wrap {
@@ -182,14 +197,27 @@
 }
 
 .vision-para {
-    width: 815px;
+    width: 650px;
     font-size: 50px;
     font-style: italic;
     color: #F5E5E1;
+    text-align: center;
 }
 
 .about-line {
     width: 750px;
+}
+
+.about-container-values {
+    height: 680px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323B48;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
 }
 
 .values-head {
@@ -206,7 +234,7 @@
 
 .values-body {
     display: flex;
-
+    gap: 20px;
 }
 
 .value {
@@ -214,20 +242,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 515px;
-    width: 400px;
+    gap: 20px;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+.value.elegant {
+    background-color: #323B48;
+    border: solid 3px #F5E5E1;
 }
 
 .value.delicate {
     background-color: #F5E5E1;
+    border: solid 3px #323B48;
 }
 
 .value.feminine {
     background-color: #F0ACBB;
+    border: solid 3px #323B48;
 }
 
 .value-title {
-    font-size: 64px;
+    font-size: 50px;
 }
 
 .value-title.light {
