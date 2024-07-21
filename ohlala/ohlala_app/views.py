@@ -8,8 +8,8 @@ def inicio(request):
     return render(request, 'ohlala_app/inicio.html', {})
 
 
-def precios(request):
-    return render(request, 'ohlala_app/precios.html', {})
+def servicios(request):
+    return render(request, 'ohlala_app/servicios.html', {})
 
 
 def agendar(request):
