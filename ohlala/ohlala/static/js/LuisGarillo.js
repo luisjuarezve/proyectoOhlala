@@ -2,14 +2,13 @@
 function handleFooter() {
     let footerSection = document.querySelector("#hideable");
     let footerBtn = document.querySelector("#expand-btn");
-    if (footerSection.classList.length > 1) {
-        footerSection.classList.toggle("show");
+    if (footerSection.classList.length < 2) {
         footerBtn.textContent = "Colapsar";
     }
     else {
-        footerSection.classList.toggle("show");
         footerBtn.textContent = "Expandir";
     }
+    footerSection.classList.toggle("show");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
