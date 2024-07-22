@@ -35,6 +35,8 @@
             </nav>
         </header>
         {% block content %}{% endblock %}
+        <div class="footer-wrap">
+        <button id="expand-btn">Expandir</button>
         <footer>
             <nav class="nav-footer">
                 <ul>
@@ -44,8 +46,36 @@
                 </ul>
             </nav>
             <hr>
+            <div class="hideable-section hidden">
+                <div>
+                    <div class="social-media-footer">
+                        <h3>Redes Sociales</h1>
+                        <div>
+                            <a href=""><img src="{% static "img/ig-ft.png" %}"></a>
+                            <a href=""><img src="{% static "img/ig-ft.png" %}"></a>
+                        </div>
+                    </div>
+                    <div class="contact-footer">
+                        <h3>Contacto</h1>
+                        <div class="numbers">
+                            <a href="https://wa.me/5804246202011"><img src="">+58 0424-6202011</a>
+                            <a href="https://wa.me/5804246246432"><img src="">+58 0424-6246432</a>
+                        </div>
+                    </div>
+                    <div class="address-footer">
+                        <h3>Dirección</h1>
+                        <a href="https://maps.app.goo.gl/1F3QS7QoNNM8Ug8u8">
+                            <p>Av. 3F con Av 5 de Julio,</p>
+                            <p>Centro Comercial Terraza 77,</p>
+                            <p>Piso 2, Local 27.</p>
+                        </a>
+                    </div>
+                </div>
+                <hr class="long">
+            </div>
             <span>© Copyright 2024 - Oh la la!</span>
         </footer>
+        </div>
         </div>
         <script src="{% static "js/LuisGarillo.js" %}"></script>
         <script src="{% static "js/LuisJuarez.js" %}"></script>
