@@ -8,19 +8,19 @@
         <h1 class="signup-title light">Bienvenida a nuestra familia</h1>
         <h2 class="signup-subtitle pink">Llene el formulario para poder registrar sus datos en el sistema</h2>
         <div class="inputs">
-            <input class="signup-field" type="number" name="cedula" id="" placeholder="Cédula">
+            <input class="signup-field" type="number" name="cedula" id="" placeholder="Cédula" required>
             <div class="signup-field-double">
-                <input class="signup-field" type="text" name="nombre" id="" placeholder="Nombre">
-                <input class="signup-field" type="text" name="apellido" id="" placeholder="Apellido">
+                <input class="signup-field" type="text" name="nombre" id="" placeholder="Nombre" required>
+                <input class="signup-field" type="text" name="apellido" id="" placeholder="Apellido" required>
             </div>
             <div class="signup-field-double">
-                <input class="signup-field" type="date" name="fecha_nacimiento" id="" placeholder="Fecha de nac.">
-                <input class="signup-field" type="text" name="telefono" id="" placeholder="Celular">
+                <input class="signup-field" type="date" name="fecha_nacimiento" id="" required>
+                <input class="signup-field" type="text" name="telefono" id="" placeholder="Celular" required>
             </div>
-            <input class="signup-field" type="email" name="correo_electronico" id="" placeholder="Correo Electronico">
+            <input class="signup-field" type="email" name="correo_electronico" id="" placeholder="Correo Electronico" required>
             <div class="signup-field-double">
-                <input class="signup-field" type="password" name="contrasena" id="" placeholder="Clave">
-                <input class="signup-field" type="password" name="" id="" placeholder="Confirmar Clave">
+                <input class="signup-field" type="password" name="contrasena" id="" placeholder="Clave" required>
+                <input class="signup-field" type="password" name="" id="" placeholder="Confirmar Clave" required>
             </div>
         </div>
         <button type="submit" class="signup-button">Registrarse</button>  

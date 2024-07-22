@@ -38,3 +38,13 @@ class Cita(models.Model):
 
     def __str__(self):
         return f"Cita {self.idCita} para {self.idCliente}"
+
+
+class Contacto(models.Model):
+    idContacto = models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=45)
+    correo_electronico = models.CharField(max_length=45, unique=True)
+    descripcion = models.TextField()
+
+    def __str__(self):
+        return f"Cita {self.idContacto} para {self.correo_electronico}"

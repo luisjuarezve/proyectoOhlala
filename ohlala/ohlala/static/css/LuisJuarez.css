@@ -504,6 +504,21 @@ footer span {
     outline: none;
 }
 
+.signup-field-double input[type="date"] {
+    color: #A6BCDA;
+}
+
+.signup-field-double input[type="date"]:focus {
+    color: #F5E5E1;
+    transition: 0.2s;
+    border-bottom: solid 3px #F5E5E1;
+    outline: none;
+}
+
+.signup-field-double input[type="date"]:valid {
+    color: #F5E5E1;
+}
+
 .signup-button {
     box-sizing: border-box;
     background-color: #323B48;

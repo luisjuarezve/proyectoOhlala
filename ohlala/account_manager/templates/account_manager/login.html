@@ -5,10 +5,10 @@
 <div class="login-wrap">
     <form method="post" class="login-card" action="{% url "form_login" %}">
         {% csrf_token %}
-    <h1 class="login-title light">Que gusto tenerte de vuelta</h1>
+        <h1 class="login-title light">Que gusto tenerte de vuelta</h1>
         <h2 class="login-subtitle grey">Ingresa tus datos para que compartamos más tiempo juntos</h2>
-            <input class="login-field" type="email" name="correo_electronico" id="" placeholder="Example@mail.com">
-            <input class="login-field" type="password" name="contrasena" id="" placeholder="Contraseña">
+            <input class="login-field" type="email" name="correo_electronico" id="" placeholder="Example@mail.com" required>
+            <input class="login-field" type="password" name="contrasena" id="" placeholder="Contraseña" required>
         <button type="submit" class="login-button">Iniciar Sesión</button>  
     </form>
     <div class="login-card-login">

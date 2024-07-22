@@ -1,8 +1,9 @@
-from django.contrib.auth.hashers import make_password
+from django.contrib.auth.hashers import check_password, make_password
 from django.db import transaction
 from django.shortcuts import render, redirect
 from account_manager.models import Cuenta, Cliente
 from django.http import HttpResponse
+from ohlala_app.models import Servicio
 # Create your views here.
 
 
@@ -24,9 +25,9 @@ def form_signup(request):
                                       telefono=telefono, fecha_nacimiento=fecha_nacimiento)
                     cliente.save()
                     cuenta = Cuenta(idCliente=cliente, correo_electronico=correo_electronico,
-                                    contrasena=make_password(contrasena))
+                                    contrasena=contrasena)
                     cuenta.save()
-                    return redirect('inicio')
+                    return redirect('login')
             except Exception as e:
                 print(f"Error: {e}")
                 return HttpResponse('Ocurrió un error durante el registro. Por favor, intenta nuevamente.')
@@ -37,16 +38,16 @@ def form_login(request):
         correo_electronico = request.POST.get('correo_electronico')
         contrasena = request.POST.get('contrasena')
         try:
-            cuenta = Cuenta.objects.get(correo_electronico=correo_electronico)
-            if check_password(contrasena, cuenta.contrasena):
-                print("acceso concedido")
-                return redirect('inicio')
-            else:
-                print("acceso denegado")
-                return HttpResponse('Contraseña incorrecta')
+            cuenta = Cuenta.objects.get(
+                correo_electronico=correo_electronico, contrasena=contrasena)
+            request.session['cuenta_id'] = cuenta.idCliente_id
+            request.session.save()
+            servicios = Servicio.objects.all()
+            return render(request, 'ohlala_app/agendar.html', {'servicios': servicios})
         except Cuenta.DoesNotExist:
-            return HttpResponse('El correo electrónico no está registrado')
-    return render(request, 'ohlala_app/login.html')
+            return redirect('login')
+    else:
+        return redirect('login')
 
 
 def signup(request):
