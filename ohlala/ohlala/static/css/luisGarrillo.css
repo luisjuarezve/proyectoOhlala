@@ -364,6 +364,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+  }
+
+  .ft-img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
   }
 
   .address-footer > a > p {
@@ -393,6 +400,7 @@
   }
 
   #expand-btn:hover {
+    transition: 0.2s;
     cursor: pointer;
     color: #F0ACBB;
   }
