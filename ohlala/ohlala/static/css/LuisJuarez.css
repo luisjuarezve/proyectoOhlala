@@ -24,7 +24,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: remixa-regular;
 }
 
 h1 {
@@ -80,58 +79,48 @@ hr {
 }
 
 .display-heading-h1 {
-    font-family: remixa-bold;
     font-size: 64px;
     color: #323B48;
 }
 
 .display-heading-h2 {
-    font-family: remixa-bold;
     font-size: 40px;
     color: #323B48;
 }
 
 .display-heading-h3 {
-    font-family: remixa-bold;
     font-size: 30px;
 }
 
 .display-heading-h4 {
-    font-family: remixa-bold;
     font-size: 20px;
 }
 
 .display-heading-bold {
-    font-family: remixa-bold;
     font-size: 38px;
     color: #FFFFFF;
 }
 
 .display-heading-semi-bold {
-    font-family: remixa-semi-bold;
     font-size: 40px;
     color: #FFFFFF;
 }
 
 .display-heading-semi-bold-h1 {
-    font-family: remixa-semi-bold;
     font-size: 64px;
     color: #323B48;
 }
 
 .display-heading-semi-bold-h2 {
-    font-family: remixa-semi-bold;
     font-size: 40px;
     color: #323B48;
 }
 
 .display-heading-semi-bold-h3 {
-    font-family: remixa-semi-bold;
     font-size: 30px;
 }
 
 .display-heading-semi-bold-h4 {
-    font-family: remixa-semi-bold;
     font-size: 20px;
     font-weight: 100;
 }
@@ -404,29 +393,24 @@ footer span {
 }
 
 .display-heading-h1 {
-    font-family: remixa-bold;
     font-size: 64px;
     color: #323B48;
 }
 
 .display-heading-h2 {
-    font-family: remixa-bold;
     font-size: 40px;
     color: #323B48;
 }
 
 .display-heading-h3 {
-    font-family: remixa-bold;
     font-size: 30px;
 }
 
 .display-heading-h4 {
-    font-family: remixa-bold;
     font-size: 20px;
 }
 
 .display-heading-bold {
-    font-family: remixa-bold;
     font-size: 38px;
     color: #FFFFFF;
 }

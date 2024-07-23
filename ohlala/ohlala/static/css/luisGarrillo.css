@@ -1,5 +1,13 @@
 /* -- Luisito (Luis Garrillo XD) -- */
 
+@font-face {
+  font-family: "meditative";
+  src: url("fonts/Meditative.ttf");
+}
+* {
+  font-family: meditative;
+  font-weight: 100;
+}
 /* 
     Quienes somos
 */
@@ -496,5 +504,30 @@
     to {
         opacity: 100%;
     }
+  }
+
+  /*
+    fix register
+  */
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  input {
+    padding-left: 5px;
+  }
+
+  .signup-card {
+    height: 625px
+  }
+
+  .signup-title {
+    font-size: 40px;
+    font-weight: 100;
   }
  
