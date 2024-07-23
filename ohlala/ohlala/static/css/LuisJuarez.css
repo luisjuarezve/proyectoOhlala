@@ -529,7 +529,6 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
 }
 
 .icons {
@@ -614,7 +613,6 @@ footer span {
     border: none;
     border-bottom: solid 3px #323B48;
     flex: none;
-    color: #FFFFFF;
 }
 
 .login-field::placeholder {
@@ -654,7 +652,7 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     background: #323B48;
 }
 

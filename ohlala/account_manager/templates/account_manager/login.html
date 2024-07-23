@@ -1,13 +1,13 @@
 {% extends "ohlala_app/index.html" %}
 {% load static %}
-{% block title %} Registro {% endblock %}
+{% block title %} Inicio de sesión {% endblock %}
 {% block content %}
 <div class="login-wrap">
     <form method="post" class="login-card" action="{% url "form_login" %}">
         {% csrf_token %}
-        <h1 class="login-title light">Que gusto tenerte de vuelta</h1>
+        <h1 class="login-title">Que gusto tenerte de vuelta</h1>
         <h2 class="login-subtitle grey">Ingresa tus datos para que compartamos más tiempo juntos</h2>
-            <input class="login-field" type="email" name="correo_electronico" id="" placeholder="Example@mail.com" required>
+            <input class="login-field" type="email" name="correo_electronico" id="" placeholder="Correo Electrónico" required>
             <input class="login-field" type="password" name="contrasena" id="" placeholder="Contraseña" required>
         <button type="submit" class="login-button">Iniciar Sesión</button>  
     </form>
@@ -15,8 +15,8 @@
         <div class="icons">
             <img class="icons-img-login" src="{% static "img/mano_logo_blanco.png" %}">
         </div>
-        <p class="login-para .display-heading-semi-bold-h1 pink">No te has unido a nuestra familia aún?</p>
-        <a class="login-button" href="{% url "signup" %}">Crea una cuenta</a> 
+        <p class="login-subtitle pink">No te has unido a nuestra familia aún?</p>
+        <a class="sign-login-button" href="{% url "signup" %}">Crea una cuenta</a> 
     </div>
 </div>
 {% endblock %}

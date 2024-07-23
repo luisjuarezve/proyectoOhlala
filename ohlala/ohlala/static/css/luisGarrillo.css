@@ -8,6 +8,10 @@
   font-family: meditative;
   font-weight: 100;
 }
+
+body {
+  color:#323B48;
+}
 /* 
     Quienes somos
 */
@@ -527,7 +531,67 @@
   }
 
   .signup-title {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 100;
+    width: 420px;
   }
+
+  .signup-subtitle {
+    font-size: 25px;
+  }
+
+  .signup-button {
+    font-size: 30px;
+  }
+
+  .signup-card-login {
+    gap: 20px;
+  }
+
+/*
+  fix login
+*/
+
+  .login-title {
+    font-size: 52px;
+  }
+
+  .login-subtitle {
+    font-size: 32px;
+  }
+
+  .login-field {
+    color: #323B48;
+  }
+
+  .login-field::placeholder {
+    color: #F5E5E1;
+  }
+
+  .sign-login-button {
+    box-sizing: border-box;
+    width: 235px;
+    text-align: center;
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
+    border: solid 3px #F5E5E1;
+    border-radius: 20px;
+    color: #F5E5E1;
+    font-size: 26px;
+  }
+
+  .sign-login-button:hover {
+    transition: 0.2s;
+    background-color: #F5E5E1;
+    cursor: pointer;
+    color: #323B48
+  }
+
+  .icons-img-login {
+    height: 275px;
+  }
+
+  /*
+    nav
+  */
  
