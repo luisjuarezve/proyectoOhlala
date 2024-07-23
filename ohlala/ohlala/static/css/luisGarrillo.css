@@ -430,11 +430,14 @@
   .slide-arrow {
     background-color: #fff;
     border: none;
+    border-radius: 50%;
     font-size: 50px;
   }
 
   .slide-arrow:hover {
     cursor: pointer;
+    color: #F0ACBB;
+    transition: all 0.2s;
   }
 
   .slide {
@@ -454,6 +457,7 @@
   }
 
   .circle-wrapper {
+    height: 20px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
