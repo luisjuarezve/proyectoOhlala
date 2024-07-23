@@ -338,9 +338,16 @@ body {
   footer
   */
 
-  footer, footer a, footer span {
+  footer, footer a, footer span, footer nav a {
     color: #A6BCDA;
   }
+
+  /*
+  footer {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  */
 
   .long {
     width: 1100px;
@@ -592,6 +599,15 @@ body {
   }
 
   /*
-    nav
+    nav fixes
   */
+
+  nav a {
+    color: #F5E5E1;
+  }
+
+  header {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
  
