@@ -74,11 +74,6 @@
     color: #323B48;
 }
 
-.carousel-right {
-
-    width: 50%;
-}
-
 .call-to-prices {
     width: 100%;
     height: 450px;
@@ -410,3 +405,92 @@
     cursor: pointer;
     color: #F0ACBB;
   }
+
+
+  /* 
+  carousel
+  */
+
+  .carousel-right {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .slide-arrow {
+    background-color: #fff;
+    border: none;
+    font-size: 50px;
+  }
+
+  .slide-arrow:hover {
+    cursor: pointer;
+  }
+
+  .slide {
+    display:flex;
+    position: relative;
+    overflow: hidden;
+    width: 190px;
+    height: 255px;
+  }
+
+  .slide-img {
+    width: 100%;
+  }
+
+  .slide-img.selected {
+    animation: fade 0.5s;
+  }
+
+  .circle-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+    background-color: #F0ACBB;
+    border-radius: 50%;
+  }
+
+  .circle.selected {
+    animation: select 0.5s forwards;
+  }
+
+  @keyframes select {
+    from {
+        width: 15px;
+        height: 15px;
+        background-color: #F0ACBB;
+    }
+    to {
+        width: 20px;
+        height: 20px;
+        background-color: #323B48;
+    }
+  }
+
+  @keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+  }
+ 

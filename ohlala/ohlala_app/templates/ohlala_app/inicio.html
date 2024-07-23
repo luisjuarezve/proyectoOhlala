@@ -71,7 +71,27 @@
         <a class="button-carousel">Ver servicios</a>
     </div>
     <div class="carousel-right">
-        <h1>Carousel de productos</h1>
+        <h1>Nuestros productos favoritos</h1>
+        <div class="slider-wrapper">
+            <button class="slide-arrow" id="prev">
+                &#8249;
+            </button>
+            <div id="slides" class="slide">
+                <img class="slide-img selected" src="{% static "img/slide1.png" %}">
+                <img class="slide-img" src="{% static "img/slide2.png" %}">
+                <img class="slide-img" src="{% static "img/slide3.png" %}">
+                <img class="slide-img" src="{% static "img/slide4.png" %}">
+            </div>
+            <button class="slide-arrow" id="next">
+                &#8250;
+            </button>
+        </div>
+        <div id="circles" class="circle-wrapper">
+            <div class="circle selected"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
     </div>
 </section>
 <!---
