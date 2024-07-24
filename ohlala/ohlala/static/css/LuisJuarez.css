@@ -777,10 +777,6 @@ footer span {
     width: 200px;
 }
 
-.agendar-card .all-services img {
-    height: 100px;
-}
-
 .agendar-factura-card {
     height: 580px;
     width: 550px;
@@ -802,7 +798,7 @@ footer span {
 
 .agendar-factura-card .servicios-list {
     align-self: flex-start;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 
 .agendar-list {

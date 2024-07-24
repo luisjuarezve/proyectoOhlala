@@ -7,9 +7,12 @@
     <div class="agendar-wrap">
         <div class="agendar-card">
             <h1 class="agendar-title light">Agenda tu cita</h1>
-            <h2 class="agendar-subtitle light">Fecha y hora</h2>
+            <div class="message-wrap">
+                <h2 class="agendar-subtitle light">Fecha y hora</h2>
+                <p id="date-error" class="error"></p>
+            </div>
             <div class="agendar-turno">
-                <input class="agendar-field" type="date" name="date">
+                <input class="agendar-field" type="date" name="date" id="agendar-fecha">
                 <select name="hora" id="hora">
                     <option value="8">8:00 AM</option>
                     <option value="9">9:00 AM</option>
@@ -28,10 +31,10 @@
             </div>
             <div class="all-services">
                 <div class="service">
-                    <img src="{% static "img/nail3.png" %}" alt="">
+                    <img class="date-img" src="{% static "img/mani.png" %}" alt="">
                     <h2 class="light">Manicura</h2>
-                    <select name="manicura">
-                        <option value="0"> - </option>
+                    <select name="manicura" id="manicura">
+                        <option value="0"> Seleccione </option>
                         {% for servicio in servicios %}
                             {% if servicio.idServicio <= 6  %}
                                 <option value="{{ servicio.idServicio }}">{{ servicio.nombre }}</option>
@@ -40,10 +43,10 @@
                     </select>
                 </div>
                 <div class="service">
-                    <img src="{% static "img/nail3.png" %}" alt="">
+                    <img class="date-img" src="{% static "img/pedi.png" %}" alt="">
                     <h2 class="light">Pedicura</h2>
-                    <select name="pedicura">
-                        <option value="0">-</option>
+                    <select name="pedicura" id="pedicura">
+                        <option value="0">Seleccione</option>
                         {% for servicio in servicios %}
                             {% if servicio.idServicio > 6  %}
                                 <option value="{{ servicio.idServicio }}">{{ servicio.nombre }}</option>
@@ -54,21 +57,38 @@
             </div>            
         </div>
         <div class="agendar-factura-card">
-            <h1 class="agendar-title">Confirmacion de la cita</h1>
+            <h1 class="agendar-title">Confirmación de la cita</h1>
             <hr>
-            <h2 class="agendar-subtitle servicios-list">Fecha de la cita: 00/00/0000 00:00 AM</h2>
+            <div class="fecha-confirmacion">
+                <h2 class="agendar-subtitle servicios-list">Fecha de la cita:</h2>
+                <p><span id="confirm-date">00/00/0000</span> <span id="confirm-hour" class="hour-span">8:00 AM</span></p>
+            </div>
             <hr>
-            <h1 class="agendar-title servicios-list">Servicios: </h1>
+            <h1 class="confirmacion-servicio">Servicios: </h1>
             <div class="agendar-list">
                 <ul>
-                    <li><p>Manicura Básica</p><p>600 Bs.</p></li>
-                    <li><p>Manicura Básica</p><p>600 Bs.</p></li>
+                    <li>
+                        <p id="confirm-mani">No se hará manicura</p>
+                        <div class="confirmation-cancel">
+                            <p><span id="mani-price" class="price">0</span>Bs</p>
+                            <div id="mani-cancel" class="cancel">✖</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p id="confirm-pedi">No se hará pedicura</p>
+                        <div class="confirmation-cancel">
+                            <p><span id="pedi-price" class="price">0</span>Bs</p>
+                            <div id="pedi-cancel" class="cancel">✖</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <hr>
-            <div class="agendar-para"><p>Total a pagar:</p><p>600 Bs.</p></div>
+            <div class="agendar-para">
+                <p>Total a pagar:</p>
+                <p><span id="total" class="price">0</span>Bs</p></div>
             <hr>
-            <button class="agendar-button">Agendar cita</button>  
+            <button id="pedi-cancel" class="agendar-button">Agendar cita</button>  
         </div>
     </div>
 </form>
