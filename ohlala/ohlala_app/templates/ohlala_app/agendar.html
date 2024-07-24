@@ -12,18 +12,7 @@
                 <p id="date-error" class="error"></p>
             </div>
             <div class="agendar-turno">
-                <h2 class="agendar-subtitle light">Manicurista: </h2>
-                <select name="hora" id="hora">
-                    <option value="0">-</option>
-                    {% for manicurista in manicuristas %}
-                        {% if manicurista.idManicurista >= 0  %}
-                            <option value="{{ servicio.idServicio }}">{{ manicurista.nombre }} {{ manicurista.apellido }}</option>
-                        {% endif %}
-                    {% endfor %}
-                </select>
-            </div>
-            <div class="agendar-turno">
-                <input class="agendar-field" type="date" name="date" id="agendar-fecha">
+                <input class="agendar-field" type="date" name="date" id="agendar-fecha" required>
                 <select name="hora" id="hora">
                     <option value="8">8:00 AM</option>
                     <option value="9">9:00 AM</option>
@@ -38,6 +27,17 @@
                     <option value="18">6:00 PM</option>
                     <option value="19">7:00 PM</option>
                     <option value="20">8:00 PM</option>
+                </select>
+            </div>
+            <div class="agendar-turno">
+                <h2 class="agendar-subtitle light">Manicurista: </h2>
+                <select name="manicurista" id="manicurista" required>
+                    <option value="0">Seleccione</option>
+                    {% for manicurista in manicuristas %}
+                        {% if manicurista.idManicurista >= 0  %}
+                            <option value="{{ manicurista.idManicurista }}">{{ manicurista.nombre }} {{ manicurista.apellido }}</option>
+                        {% endif %}
+                    {% endfor %}
                 </select>
             </div>
             <div class="all-services">
@@ -74,6 +74,13 @@
                 <h2 class="agendar-subtitle servicios-list">Fecha de la cita:</h2>
                 <p><span id="confirm-date">00/00/0000</span> <span id="confirm-hour" class="hour-span">8:00 AM</span></p>
             </div>
+            <div class="manicurista-confirmacion">
+                <h2 class="agendar-subtitle servicios-list">Manicurista:</h2>
+                <div>
+                    <p id="confirm-manicurista">Su manicurista</span></p>
+                    <div id="work-cancel" class="cancel">✖</div>
+                </div>
+            </div>
             <hr>
             <h1 class="confirmacion-servicio">Servicios: </h1>
             <div class="agendar-list">
@@ -99,7 +106,7 @@
                 <p>Total a pagar:</p>
                 <p><span id="total" class="price">0</span>Bs</p></div>
             <hr>
-            <button type="submit" id="pedi-cancel" class="agendar-button">Agendar cita</button>  
+            <button type="submit" id="schedule" class="agendar-button" disabled>Agendar cita</button>  
         </div>
     </div>
 </form>

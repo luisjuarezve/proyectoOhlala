@@ -674,7 +674,18 @@ body {
     color:#F5E5E1;
   }
 
-  .fecha-confirmacion {
+  .agendar-button:disabled{
+    background-color: #d6c5c1;
+    border: solid 3px #465161;
+    color: #465161;
+  }
+  .agendar-button:disabled:hover {
+    cursor: auto;
+    background-color: #d6c5c1;
+    color: #465161;
+  }
+
+  .fecha-confirmacion, .manicurista-confirmacion {
     width: 520px;
     display: flex;
     justify-content: space-between;
@@ -685,6 +696,17 @@ body {
     align-items: center;
     padding-right: 40px;
     font-size: 22px;
+  }
+  .manicurista-confirmacion p {
+    display:flex;
+    align-items: center;
+    font-size: 22px;
+  }
+
+  .manicurista-confirmacion div {
+    margin-right: 20px;
+    margin-left: 10px;
+    display: flex;
   }
 
   .fecha-confirmacion h2 {
@@ -721,12 +743,14 @@ body {
   }
 
   .cancel {
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     font-size: 20px;
     width: 30px;
+    height: 30px;
     padding-bottom: 2px;
   }
 
