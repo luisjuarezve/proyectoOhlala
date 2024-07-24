@@ -119,6 +119,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'ohlala/static'),)
+SESSION_COOKIE_SECURE = False  # No requiere HTTPS (solo para desarrollo)
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+# Almacena en la base de datos
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

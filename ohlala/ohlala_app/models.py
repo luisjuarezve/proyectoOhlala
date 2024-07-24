@@ -14,9 +14,6 @@ class Manicurista(models.Model):
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
 
-    def __str__(self):
-        return self.correo_electronico
-
 
 class Servicio(models.Model):
     idServicio = models.AutoField(primary_key=True)

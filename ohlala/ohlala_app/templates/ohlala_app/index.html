@@ -19,10 +19,17 @@
             </a>
             <div class="dropdown">
                 <button class="dropbtn">Cuenta</button>
-                <div class="dropdown-content">
-                    <a href="{% url "signup" %}">Registro</a>
-                    <a href="{% url "login" %}">Inicio de sesión</a>
-                </div>
+                {% if sesion != "activo" %}
+                    <div class="dropdown-content">
+                        <a href="{% url "signup" %}">Registro</a>
+                        <a href="{% url "login" %}">Inicio de sesión</a>
+                    </div>
+                {% else %}
+                    <form method='POST' action="{% url "logout" %}" class="dropdown-content">
+                        {% csrf_token %}
+                        <button type="submit">Cerrar sesión</button>
+                    </form>
+                {% endif %}
             </div>
             <nav>
                 <ul>
@@ -34,7 +41,8 @@
                 </ul>
             </nav>
         </header>
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock %}
         <div class="footer-wrap">
         <button id="expand-btn">Expandir</button>
         <footer>

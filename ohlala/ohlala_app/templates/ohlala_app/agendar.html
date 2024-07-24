@@ -12,6 +12,17 @@
                 <p id="date-error" class="error"></p>
             </div>
             <div class="agendar-turno">
+                <h2 class="agendar-subtitle light">Manicurista: </h2>
+                <select name="hora" id="hora">
+                    <option value="0">-</option>
+                    {% for manicurista in manicuristas %}
+                        {% if manicurista.idManicurista >= 0  %}
+                            <option value="{{ servicio.idServicio }}">{{ manicurista.nombre }} {{ manicurista.apellido }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="agendar-turno">
                 <input class="agendar-field" type="date" name="date" id="agendar-fecha">
                 <select name="hora" id="hora">
                     <option value="8">8:00 AM</option>
@@ -88,7 +99,7 @@
                 <p>Total a pagar:</p>
                 <p><span id="total" class="price">0</span>Bs</p></div>
             <hr>
-            <button id="pedi-cancel" class="agendar-button">Agendar cita</button>  
+            <button type="submit" id="pedi-cancel" class="agendar-button">Agendar cita</button>  
         </div>
     </div>
 </form>

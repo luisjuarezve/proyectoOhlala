@@ -40,12 +40,19 @@ def form_login(request):
         try:
             cuenta = Cuenta.objects.get(
                 correo_electronico=correo_electronico, contrasena=contrasena)
-            request.session['cuenta_id'] = cuenta.idCliente_id
+            request.session['id_cliente'] = cuenta.idCliente_id
             request.session.save()
-            servicios = Servicio.objects.all()
-            return render(request, 'ohlala_app/agendar.html', {'servicios': servicios})
+            return redirect('agendar')
         except Cuenta.DoesNotExist:
             return redirect('login')
+    else:
+        return redirect('login')
+
+
+def form_logout(request):
+    if request.method == 'POST':
+        del request.session['id_cliente']
+        return redirect('login')  # Redirect to the login page
     else:
         return redirect('login')
 
