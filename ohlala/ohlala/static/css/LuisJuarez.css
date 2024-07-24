@@ -303,6 +303,7 @@ header {
 
 .card.pink {
     background-color: #F0ACBB;
+    color: #F1F5E6;
 }
 
 .card.pink:hover {

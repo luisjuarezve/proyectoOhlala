@@ -610,4 +610,15 @@ body {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
   }
+
+  /*
+  services fix
+  */
+
+  .texto p, .caja-blanca p {
+    font-size: 24px;
+  }
+  
+
+
  
