@@ -48,13 +48,37 @@ function goBack() {
     circles.children[index].classList.toggle("selected");
 }
 
+function configureDate(dateField) {
+    let date = new Date();
+
+    let rangeDate = date.getFullYear() - 18;
+    console.log("hola fechas")
+    console.log(`$${rangeDate}-${date.getUTCMonth()}-${date.getUTCDate()}`)
+    let month = date.getMonth()
+    if (month < 10) {
+        month = `0${month}`;
+    }
+    let day = date.getDate();
+    if (day < 10) {
+        day = `0${day}`;
+    }
+    dateField.setAttribute("max", `${rangeDate}-${month}-${day}`);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     let footerBtn = document.querySelector("#expand-btn");
     footerBtn.addEventListener("click", handleFooter);
-
+    
     let nextBtn = document.querySelector("#next");
     let prevBtn = document.querySelector("#prev");
 
-    nextBtn.addEventListener("click", advance);
+    if (nextBtn && prevBtn) {
+        nextBtn.addEventListener("click", advance);
     prevBtn.addEventListener("click", goBack);
+    }
+
+    let dateField = document.querySelector("#date-field");
+    if (dateField) {
+        configureDate(dateField);
+    }   
 });

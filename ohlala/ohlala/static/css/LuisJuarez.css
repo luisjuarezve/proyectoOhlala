@@ -171,7 +171,7 @@ input {
 }
 
 input::placeholder {
-    color: #A6BCDA;
+    color: #7c8cb9;
 }
 
 select {
@@ -490,7 +490,7 @@ footer span {
 }
 
 .signup-field-double input[type="date"] {
-    color: #A6BCDA;
+    color: #7c8cb9;
 }
 
 .signup-field-double input[type="date"]:focus {

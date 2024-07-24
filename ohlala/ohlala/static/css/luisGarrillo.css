@@ -618,6 +618,24 @@ body {
   .texto p, .caja-blanca p {
     font-size: 24px;
   }
+
+  /* 
+    fix contact
+  */
+
+  .icons {
+    gap: 30px;
+  }
+
+  .icons a img {
+    width: 115px;
+    height: 115px;
+  }
+
+  .contact-textarea::placeholder {
+    color:#7c8cb9
+  }
+
   
 
 
