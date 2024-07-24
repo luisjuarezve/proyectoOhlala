@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %} Agendar {% endblock %}
 {% block content %}
-<form action="" method="post">
+<form action="{% url "registro_cita" %}" method="post">
     {% csrf_token %}
     <div class="agendar-wrap">
         <div class="agendar-card">
@@ -12,7 +12,7 @@
                 <p id="date-error" class="error"></p>
             </div>
             <div class="agendar-turno">
-                <input class="agendar-field" type="date" name="date" id="agendar-fecha" required>
+                <input class="agendar-field" type="date" name="fecha" id="agendar-fecha" required>
                 <select name="hora" id="hora">
                     <option value="8">8:00 AM</option>
                     <option value="9">9:00 AM</option>
