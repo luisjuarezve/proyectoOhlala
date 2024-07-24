@@ -611,6 +611,25 @@ body {
     border-bottom-right-radius: 40px;
   }
 
+  header div {
+    display: flex;
+    align-items: center;
+    gap : 20px
+  }
+
+  .log-out-btn {
+    border: none;
+    background-color: #323B48;
+    color: #F5E5E1;
+    font-size: 25px;
+  }
+
+  .log-out-btn:hover {
+    transition: all .2s;
+    cursor: pointer;
+    color: #F0ACBB;
+  }
+
   /*
   services fix
   */

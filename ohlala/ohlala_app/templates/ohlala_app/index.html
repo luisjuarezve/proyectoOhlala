@@ -14,20 +14,22 @@
 <body>
     <div class="container">
         <header>
-            <a href="{% url "inicio" %}">
-                <img src="{% static "img/logo_nuevo.png" %}" class="logo" alt="logotipo-ohlala">
-            </a>
-            <div class="dropdown">
-                <button class="dropbtn">Cuenta</button>
+            <div>
+                <a href="{% url "inicio" %}">
+                    <img src="{% static "img/logo_nuevo.png" %}" class="logo" alt="logotipo-ohlala">
+                </a>
                 {% if sesion != "activo" %}
-                    <div class="dropdown-content">
-                        <a href="{% url "signup" %}">Registro</a>
-                        <a href="{% url "login" %}">Inicio de sesión</a>
-                    </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Cuenta</button>
+                        <div class="dropdown-content">
+                            <a href="{% url "signup" %}">Registro</a>
+                            <a href="{% url "login" %}">Inicio de sesión</a>
+                        </div>
+                </div>
                 {% else %}
-                    <form method='POST' action="{% url "logout" %}" class="dropdown-content">
+                    <form method='POST' action="{% url "logout" %}">
                         {% csrf_token %}
-                        <button type="submit">Cerrar sesión</button>
+                        <button class="log-out-btn" type="submit">Cerrar sesión</button>
                     </form>
                 {% endif %}
             </div>
