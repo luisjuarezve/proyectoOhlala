@@ -24,7 +24,7 @@
 }
 
 .contact-title {
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .contact-title.light {
@@ -106,7 +106,7 @@
 
 .contact-para {
     width: 413px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
 }
 
@@ -195,7 +195,7 @@ hr {
 
   .caja-blanca p{
     width: 900px;
-    font-size: 24px;
+    font-size: 27.5px;
     margin: 0px;
     text-align: justify;
     color: #323B48;

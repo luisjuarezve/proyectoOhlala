@@ -5,7 +5,7 @@
 <div class="signup-wrap">
     <form method="post" class="signup-card" action="{% url "form_signup" %}">
         {% csrf_token %}
-        <h1 class="signup-title light">Bienvenida a nuestra familia</h1>
+        <h1 class="signup-title light">Bienvenido a nuestra familia</h1>
         <h2 class="signup-subtitle pink">Llene el formulario para poder registrar sus datos en el sistema</h2>
         <div class="inputs">
             <input class="signup-field" type="number" name="cedula" id="" placeholder="Cédula" required>
@@ -29,7 +29,7 @@
         <div class="icons">
             <img src="{% static "img/nail_polish.png" %}">
         </div>
-        <h1 class="signup-title">Ya te encuentras registrado?</h1>
+        <h1 class="signup-title">¿Ya te encuentras registrado?</h1>
         <a class="login-button" href="{% url "login" %}">Iniciar sesión</a> 
     </div>
 </div>

@@ -16,7 +16,7 @@
         <div><img src="{% static "img/manicura-basica.png" %}" class=imagen alt=""></div>
         <div id="#manicura" class="texto">
           <h1>Manicura básica</h1>
-          <p>Nuestra manicura básica incluye limado y forma de uñas, cuidado de cutículas y opcionalmente, la aplicación de esmalte de uñas para embellecer tus manos.</p>
+          <p>Nuestra manicura básica incluye limado y forma de uñas, cuidado de cutículas, y opcionalmente, la aplicación de esmalte de uñas para embellecer tus manos.</p>
         </div>
       </div>
       <hr>
@@ -32,7 +32,7 @@
         <div><div><img src="{% static "img/manicura-gel.png" %}" class=imagen alt=""></div></div>
         <div id="#manicura-gel" class="texto">
           <h1>Manicura en gel</h1>
-          <p>Con nuestro manicure en gel, disfrutarás de un esmalte de uñas de larga duración. Utilizamos esmaltes de gel de alta calidad que se secan bajo una lámpara UV o LED, brindando un brillo duradero y resistencia a los astillamientos.</p>
+          <p>Con nuestra manicura en gel, disfrutarás de un esmalte de uñas de larga duración. Utilizamos esmaltes de gel de alta calidad que se secan bajo una lámpara UV o LED, brindando un brillo duradero y resistencia a los astillamientos.</p>
         </div>
       </div>
       <hr>
@@ -55,8 +55,7 @@
       <div id="#manicura-polygel" class="caja-negra last">
         <div class="texto">
           <h1>Polygel</h1>
-          <p>El Polygel es una opción versátil que combina lo mejor de los sistemas de gel y acrílico. Proporciona una apariencia natural y flexible, al mismo tiempo que ofrece fuerza y durabilidad. Es una excelente opción para quienes desean uñas esculpidas sin utilizar extensiones.
-            Pedicure:</p>
+          <p>El Polygel es una opción versátil que combina lo mejor de los sistemas de gel y acrílico. Proporciona una apariencia natural y flexible, al mismo tiempo que ofrece fuerza y durabilidad. Es una excelente opción para quienes desean uñas esculpidas sin utilizar extensiones.</p>
         </div>
         <div><img src="{% static "img/poly-gel.png" %}" class=imagen alt=""></div>
       </div>
@@ -74,21 +73,22 @@
         <div><img src="{% static "img/pedicura-circulo1.png" %}" class=imagen alt=""></div>
         <div class=texto>
           <h1>Pedicura básica</h1>
-          <p>Nuestro pedicure básica es un tratamiento completo para tus pies. Incluye remojo, limado y forma de uñas, eliminación de callosidades y durezas, cuidado de cutículas y aplicación de esmalte de uñas para que tus pies luzcan hermosos y cuidados.</p>
+          <p>Nuestra pedicura básica es un tratamiento completo para tus pies. Incluye remojo, limado y forma de uñas, eliminación de callosidades y durezas, cuidado de cutículas y aplicación de esmalte de uñas para que tus pies luzcan hermosos y cuidados.</p>
         </div>
       </div>
       <hr>
       <div class="caja-negra last">
         <div class=texto>
-          <h1>Pedicura básica</h1>
-          <p>Nuestro pedicure básica es un tratamiento completo para tus pies. Incluye remojo, limado y forma de uñas, eliminación de callosidades y durezas, cuidado de cutículas y aplicación de esmalte de uñas para que tus pies luzcan hermosos y cuidados.</p>
+          <h1>Pedicura spa</h1>
+          <p>Nuestra pedicura spa es una experiencia relajante y rejuvenecedora para tus pies. Además de los servicios de la pedicure básica, disfrutarás de un exfoliante suave, mascarilla hidratante y un masaje relajante en pies y piernas para aliviar la tensión y revitalizar tu piel.</p>
         </div>
-        <div><img src="{% static "img/pedicura-circulo1.png" %}" class=imagen alt=""></div>
+        <div><img src="{% static "img/spa.png" %}" class=imagen alt=""></div>
       </div>
     </div>
     
-    <div class="caja-rosada">
-      <h3 class="texto1">Nuestro objetivo es brindarte una experiencia personalizada y satisfactoria, por lo que nos esforzaremos por cumplir con tus expectativas y superarlas. Si tienes alguna pregunta o inquietud antes de tu cita, no dudes en contactarnos. Estaremos encantados de ayudarte.</h3>
-      <a href="" class="button-primary">Agendar cita</a>
+    <div class="caja-rosada large">
+      <img src="{% static "img/chicaN.png" %}">
+      <h3 class="texto1">Nuestro objetivo es brindarte una experiencia personalizada y satisfactoria, por lo que nos esforzaremos por cumplir con tus expectativas y superarlas. Agenda una cita para disfrutar de una experiencia inolvidable.</h3>
+      <a href="{% url "agendar" %}" class="button-primary">Agendar cita</a>
   </div>
 {% endblock %}

@@ -715,7 +715,7 @@ border: solid 3px #323B48;
   */
 
   .texto p, .caja-blanca p {
-    font-size: 24px;
+    font-size: 27.5px;
   }
   .caja-negra.first {
     border-top-left-radius: 50px;
@@ -725,6 +725,11 @@ border: solid 3px #323B48;
   .caja-negra.last {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+  }
+
+  .caja-rosada.large {
+    height: 720px;
+    padding-bottom:30px;
   }
 
   .ayuda {

@@ -134,7 +134,7 @@ function setManicure(event) {
 }
 
 function cancelMani() {
-    document.querySelector("#confirm-mani").textContent = "No se hará manicura";
+    document.querySelector("#confirm-mani").textContent = "No se incluye manicura";
     document.querySelector("#mani-price").textContent = 0;
     document.querySelector("#manicura").value = 0;
     maniCheck = false;
@@ -143,7 +143,7 @@ function cancelMani() {
 }
 
 function cancelPedi() {
-    document.querySelector("#confirm-pedi").textContent = "No se hará pedicura";
+    document.querySelector("#confirm-pedi").textContent = "No se incluye pedicura";
     document.querySelector("#pedi-price").textContent = 0;
     document.querySelector("#pedicura").value = 0;
     pediCheck = false;
