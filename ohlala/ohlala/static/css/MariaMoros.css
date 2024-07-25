@@ -121,7 +121,6 @@ hr {
   }
   
   .contendor-padre {
-    background-color: #323B48;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
