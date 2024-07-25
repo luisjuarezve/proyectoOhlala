@@ -23,23 +23,34 @@
         </div>
         <hr id="value-separator" class="elegant">
         <div id="value-body" class="values-body">
-            
-                <div id="delicate" class="value delicate">
-                    <h2 class="value-title">Delicadeza</h2>
-                    <p class="value-para">Tratamos de ofrecer un trato de calidad para todos</p>
-                </div>
-                
-                <div id="elegant" class="value elegant selected">
-                    <h2 class="value-title light">Elegancia</h2>
-                    <p class="value-para light selected">Buscamos expresar la belleza de la mejor forma.</p>
-                </div>
-                
-                <div id="feminine" class="value feminine">
-                    <h2 class="value-title">Feminidad</h2>
-                    <p class="value-para">Resaltamos el fervor femenino de nuestro interior.</p>
-                </div>
+            <div id="delicate" class="value delicate">
+                <h2 class="value-title">Delicadeza</h2>
+                <p class="value-para">Tratamos de ofrecer un trato de calidad para todos</p>
+            </div>
+            <div id="elegant" class="value elegant selected">
+                <h2 class="value-title light">Elegancia</h2>
+                <p class="value-para light selected">Buscamos expresar la belleza de la mejor forma.</p>
+            </div>
+            <div id="feminine" class="value feminine">
+                <h2 class="value-title">Feminidad</h2>
+                <p class="value-para">Resaltamos el fervor femenino de nuestro interior.</p>
+            </div>
         </div>
     </div>
+    <section class="go-to-contact">
+        <div class="contact-circle">
+            <img src="{% static "img/chicaP.png" %}">
+        </div>
+        <div>
+            <h1>
+                ¿Tienes más dudas?
+            </h1>
+            <p>
+                Si deseas obtener más información o tines alguna pregunta nos encantaria atenderte.
+            </p>
+            <a href="{% url "contacto" %}">¡Contáctanos!</a>
+        </div>
+    </section>
 </div>
     
 <script src="{% static "js/about.js" %}"></script>

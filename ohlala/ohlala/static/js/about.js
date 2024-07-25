@@ -6,13 +6,14 @@ let separator = document.querySelector("#value-separator");
 let onGoing = false;
 
 function change(event) {
-    if (event.target.id !== "delicate" && event.target.id !== "elegant" && event.target.id !== "feminine") {
-        return;
+    let target = event.target;
+    if (target.id !== "delicate" && target.id !== "elegant" && target.id !== "feminine") {
+        target = target.parentElement;
     }
     if (!onGoing) {
         onGoing = true;
         configure(selected);
-        selected = event.target;
+        selected = target;
         configure(selected);
         onGoing = false;
     }
