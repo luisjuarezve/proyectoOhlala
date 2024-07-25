@@ -131,7 +131,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #F0ACBB;
-    gap: 20px;
 }
 
 .about-container {
@@ -161,6 +160,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 .about-container-row {
@@ -204,7 +204,7 @@ body {
 }
 
 .vision-para {
-    width: 650px;
+    width: 550px;
     font-size: 50px;
     font-style: italic;
     color: #F5E5E1;
@@ -216,6 +216,7 @@ body {
 }
 
 .about-container-values {
+    box-sizing: border-box;
     height: 680px;
     width: 1200px;
     display: flex;
@@ -224,7 +225,7 @@ body {
     align-items: center;
     background-color: #323B48;
     border-top-left-radius: 75px;
-
+    border-top-right-radius: 75px;
 }
 .values-head {
     display: flex;
@@ -248,6 +249,7 @@ body {
 
 .values-title {
     color: #F5E5E1;
+    font-size: 72px;
 }
 
 .values-title.feminine, .values-title.delicate {
@@ -275,6 +277,8 @@ body {
 .about-container-values.feminine {
   transition: all .7s;
   background-color: #F0ACBB;
+  border: solid 3px #323B48;
+  border-bottom: none;
 }
 
 .about-container-values.delicate {
@@ -293,6 +297,13 @@ body {
     height: 250px;
     width: 250px;
     border-radius: 50%;
+}
+
+.value:hover {
+  transition: all .2s;
+  height: 285px;
+    width: 285px;
+    cursor: pointer;
 }
 
 .value.selected {
@@ -869,7 +880,58 @@ border: solid 3px #323B48;
     align-items: center;
   }
 
-  
+  .go-to-contact {
+    height: 720px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F5E5E1;
+  }
+
+  .go-to-contact div {
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .go-to-contact h1 {
+    width: 550px;
+    font-size: 72px;
+    text-align: center;
+  }
+
+  .go-to-contact p {
+    width: 550px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .contact-circle {
+    height: 520px;
+    width: 520px;
+    border-radius: 50%;
+    background-color: #323B48;
+  }
+
+  .go-to-contact a {
+    font-size: 30px;
+    color: #323B48;
+    border: solid 3px #323B48;
+    border-radius: 20px;
+    width: 230px; 
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .go-to-contact a:hover {
+    background-color: #323B48;
+    color: #F5E5E1;
+  }
 
 
  
