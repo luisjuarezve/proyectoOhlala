@@ -17,25 +17,32 @@
         <p class="vision-para">Ofrecer un espacio seguro en el que los clientes obtengan la mejor versión de si mismos. </p>
     </div>
     
-    <div class="about-container-values">
+    <div class="about-container-values elegant">
         <div class="values-head">
-            <h1 class="values-title">Valores</h1>
+            <h1 class="values-title elegant">Valores</h1>
         </div>
-        <div class="values-body">
-            <div class="value delicate">
-                <h2 class="value-title">Delicadeza</h2>
-                <p class="value-para">Buscamos expresar la belleza de la mejor forma</p>
-            </div>
-            <div class="value elegant">
-                <h2 class="value-title light">Elegancia</h2>
-                <p class="value-para light">Buscamos expresar la belleza de la mejor forma.</p>
-            </div>
-            <div class="value feminine">
-                <h2 class="value-title">Feminidad</h2>
-                <p class="value-para">Resaltamos el fervor femenino de nuestro interior.</p>
-            </div>
+        <hr id="value-separator" class="elegant">
+        <div id="value-body" class="values-body">
+            
+                <div id="delicate" class="value delicate">
+                    <h2 class="value-title">Delicadeza</h2>
+                    <p class="value-para">Tratamos de ofrecer un trato de calidad para todos</p>
+                </div>
+                
+                <div id="elegant" class="value elegant selected">
+                    <h2 class="value-title light">Elegancia</h2>
+                    <p class="value-para light selected">Buscamos expresar la belleza de la mejor forma.</p>
+                </div>
+                
+                <div id="feminine" class="value feminine">
+                    <h2 class="value-title">Feminidad</h2>
+                    <p class="value-para">Resaltamos el fervor femenino de nuestro interior.</p>
+                </div>
         </div>
     </div>
 </div>
+    
+<script src="{% static "js/about.js" %}"></script>
+
     
 {% endblock %}
